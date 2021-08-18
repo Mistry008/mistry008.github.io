@@ -1300,11 +1300,11 @@
 
 .golf-data-overview ul li {
   margin: 2%;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .golf-data-overview ul li span {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 500;
 }
