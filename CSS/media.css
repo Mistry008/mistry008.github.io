@@ -1,0 +1,477 @@
+@media only screen and (max-width: 1200px) {
+  .main-container {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+  }
+
+  .all-content {
+    min-height: auto;
+    width: 650px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 20px;
+  }
+
+  .actual-content {
+    position: relative;
+    height: auto;
+    width: 570px;
+    top: 20px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+  .nav-bar-mobile {
+    display: block;
+    float: left;
+    position: sticky;
+    height: 500px;
+    top: 20px;
+    width: 70px;
+    font-size: 0.85rem;
+  }
+
+  .nav-bar-mobile ul li a span {
+    font-size: 0.8rem;
+  }
+  .info-box {
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    position: relative;
+    height: 500px;
+    margin-bottom: 0;
+  }
+
+  .profile-picture {
+    top: 50%;
+  }
+  .picture-shadow {
+    top: 51%;
+  }
+  .content-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+
+  #sec1,
+  #sec2,
+  #sec3,
+  #sec4,
+  #sec5,
+  #sec6 {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+    top: 0%;
+  }
+
+  .added-information {
+    width: 600px;
+    height: 95%;
+  }
+
+  .added-report iframe {
+    height: 90vh;
+    width: 50vw;
+  }
+
+  /* Section specifc styling */
+  .personal-data-block {
+    font-size: 0.85rem;
+  }
+
+  .personal-data-block li span {
+    font-size: 0.9rem;
+  }
+
+  .edu-title,
+  .exp-title {
+    font-size: 0.9rem;
+  }
+
+  .edu-year,
+  .exp-title i {
+    font-size: 0.75rem;
+  }
+
+  .edu-institute,
+  .edu-location,
+  .exp-place,
+  .-exp-location {
+    font-size: 0.85rem;
+  }
+
+  .technical-skills h3,
+  .skills-wrapper h3 {
+    font-size: 1.1rem;
+  }
+
+  .tech-bar-title {
+    font-size: 0.83rem;
+  }
+
+  .tech-bar-percent {
+    font-size: 0.75rem;
+    top: 5px;
+  }
+
+  .modelling-skills ul li span {
+    font-size: 0.7rem;
+  }
+
+  .other-sport span {
+    width: 20%;
+  }
+
+  .other-sport-list li {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main-container {
+    min-height: 100vh;
+    min-width: 320px;
+    width: 100vw;
+    overflow-y: auto;
+  }
+
+  .all-content {
+    min-height: auto;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 20px;
+  }
+
+  .actual-content {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 0%;
+    margin-bottom: 20px;
+  }
+
+  .nav-bar-mobile {
+    display: none;
+  }
+
+  .nav-bar-phone {
+    left: -100%;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    min-width: 320px;
+    width: 50vw;
+    caret-color: transparent;
+  }
+
+  .nav-bar-phone ul {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    top: 0%;
+    height: 100%;
+  }
+
+  .nav-bar-phone ul li {
+    background-color: none;
+    height: 10%;
+    width: 100%;
+    border: none;
+  }
+
+  .nav-bar-phone ul li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15%;
+    color: #444444;
+  }
+
+  .nav-bar-phone ul li a {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .nav-bar-phone ul li a i {
+    width: 15px;
+    margin-right: 15px;
+  }
+
+  .nav-bar-phone ul li a:hover,
+  .exit-menu li a:hover {
+    color: rgb(218, 64, 179);
+    cursor: pointer;
+  }
+
+  .exit-menu a {
+    padding-left: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .nav-bar-toggle {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    z-index: 5;
+    font-size: 0.7rem;
+    caret-color: transparent;
+  }
+
+  .nav-bar-toggle:hover {
+    cursor: pointer;
+    color: rgb(218, 64, 179);
+  }
+
+  .all-content {
+    padding-bottom: 20px;
+  }
+  .actual-content {
+    margin-bottom: 0px;
+  }
+  .content-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+
+  #sec1,
+  #sec2,
+  #sec3,
+  #sec4,
+  #sec5,
+  #sec6 {
+    border-radius: 0;
+  }
+
+  .info-box {
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .background-image {
+    border-radius: 0px;
+  }
+
+  /* Section phone specific styling */
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 0.85rem;
+  }
+
+  .personal-data-block {
+    font-size: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7.5%;
+  }
+
+  .personal-data li span {
+    font-size: 0.85rem;
+  }
+
+  .personal1 {
+    padding-right: 0%;
+  }
+
+  .facts-list {
+    flex-wrap: wrap;
+  }
+
+  .facts-list li {
+    width: 33%;
+    padding: 2%;
+  }
+
+  .reference-list {
+    flex-direction: column;
+  }
+
+  .reference-list li {
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  /* RESUME SECTION */
+  .school-list ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .school-list ul li {
+    width: 97%;
+  }
+
+  .work-list li {
+    width: 100%;
+  }
+  .work-list ul li a {
+    flex-direction: column;
+    text-align: left;
+    padding: 5%;
+  }
+
+  .work-list ul li a span {
+    width: 100%;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .work-list ul li a .exp-title {
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+
+    align-items: flex-start;
+  }
+  .work-list ul li a .exp-location {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Leadership-section {
+    margin-bottom: 50px;
+  }
+  .Leadership-section ul li {
+    height: 165px;
+  }
+
+  .Leadership-section ul li div {
+    font-size: 0.75rem;
+    padding: 5%;
+  }
+
+  .Leadership-section ul li div span {
+    font-size: 0.7rem;
+  }
+
+  .Golf-Captain {
+    border-right: none;
+  }
+  .Design-Lead {
+    border-left: 1px solid rgba(231, 0, 208, 0.089);
+  }
+
+  .added-information {
+    height: 100%;
+    width: 100%;
+  }
+  .ng-background {
+    display: none;
+  }
+  .added-information-content h1 {
+    font-size: 1.2rem;
+  }
+  .full-details {
+    font-size: 0.8rem;
+  }
+  .fine-details {
+    font-size: 0.75rem;
+  }
+  .full-details h3 {
+    text-align: left;
+  }
+
+  /* SKILLS SECTION */
+  .bar-info {
+    height: 25px;
+  }
+
+  .tech-bar-percent {
+    top: 3px;
+    right: 4%;
+    font-size: 0.7rem;
+  }
+
+  .skill-type {
+    width: 100%;
+  }
+  .right-skill {
+    margin-left: 0;
+  }
+
+  .project-skills ul li {
+    font-size: 0.9rem;
+  }
+
+  .code-skills-panel,
+  .office-container {
+    border: none;
+  }
+
+  .personality-traits ul li {
+    font-size: 0.9rem;
+  }
+
+  .added-image img {
+    max-width: 90vw;
+  }
+
+  .added-image i {
+    top: -10%;
+    right: 0%;
+  }
+
+  .added-report iframe {
+    height: 85vh;
+    width: 90vw;
+  }
+
+  .added-report i {
+    right: 0;
+    top: -7%;
+  }
+
+  /* GOLF */
+  .golf-description {
+    font-size: 0.85rem;
+  }
+
+  .golf-achievements ul li i {
+    font-size: 1rem;
+  }
+  .golf-achievements ul li span {
+    font-size: 0.8rem;
+  }
+  .golf-facts ul li span {
+    font-size: 0.85rem;
+  }
+
+  .golf-facts ul li i {
+    font-size: 0.75rem;
+  }
+  /* FORM */
+  form .contact-button button {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+
+  form .contact-field input,
+  form .contact-message textarea {
+    font-size: 0.85rem;
+  }
+
+  form .contact-message span i {
+    top: 5px;
+  }
+}

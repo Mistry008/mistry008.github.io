@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil Mistry Interactive Resume</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS\styles.css" />
+    <link rel="stylesheet" href="CSS\media.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript -->
+    <script src="https://use.fontawesome.com/176f9c3429.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript\jquery.easypiechart.min.js"></script>
+    <script src="JavaScript\script.js" defer></script>
+    <script src="JavaScript\media-script.js" defer></script>
+  </head>
+  <body>
+    <div class="load-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".load-wrapper").fadeOut("slow");
+      });
+    </script>
+
+    <div class="animated-background">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="nav-bar-toggle">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+
+    <div class="nav-bar-phone">
+      <ul>
+        <li class="exit-menu">
+          <a><i class="fa fa-times fa-2x"></i></a>
+        </li>
+        <li class="top-menu">
+          <a id="phone-nav-1">
+            <i class="fa fa-user"></i>
+            <span>About</span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a id="phone-nav-2">
+            <i class="fa fa-file-text fa-1x"></i>
+            <span>Resume</span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a id="phone-nav-3">
+            <i class="fa fa-line-chart fa-1x"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a id="phone-nav-4">
+            <i class="fa fa-map-pin fa-1x"></i>
+            <span>Golf</span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a id="phone-nav-5">
+            <i class="fa fa-paint-brush fa-1x"></i>
+            <span>Works</span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a id="phone-nav-6">
+            <i class="fa fa-envelope fa-1x"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-container">
+      <div class="all-content">
+        <div class="nav-bar">
+          <ul>
+            <li class="top-menu">
+              <a class="show-section" id="secb1" target="1">
+                <i class="fa fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section" id="secb2" target="2">
+                <i class="fa fa-file-text fa-1x"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section" id="secb3" target="3">
+                <i class="fa fa-line-chart fa-1x"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section" id="secb4" target="4">
+                <i class="fa fa-map-pin fa-1x"></i>
+                <span>Golf</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section" id="secb5" target="5">
+                <i class="fa fa-paint-brush fa-1x"></i>
+                <span>Works</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section" id="secb6" target="6">
+                <i class="fa fa-envelope fa-1x"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-bar-mobile">
+          <ul>
+            <li class="top-menu-mobile">
+              <a class="show-section-mobile" id="mobile-nav-1">
+                <i class="fa fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="show-section-mobile" id="mobile-nav-2">
+                <i class="fa fa-file-text fa-1x"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+
+            <li class="menu-item-mobile">
+              <a class="show-section-mobile" id="mobile-nav-3">
+                <i class="fa fa-line-chart fa-1x"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+
+            <li class="menu-item-mobile">
+              <a class="show-section-mobile" id="mobile-nav-4">
+                <i class="fa fa-map-pin fa-1x"></i>
+                <span>Golf</span>
+              </a>
+            </li>
+
+            <li class="menu-item-mobile">
+              <a class="show-section-mobile" id="mobile-nav-5">
+                <i class="fa fa-paint-brush fa-1x"></i>
+                <span>Works</span>
+              </a>
+            </li>
+
+            <li class="menu-item-mobile">
+              <a class="show-section-mobile" id="mobile-nav-6">
+                <i class="fa fa-envelope fa-1x"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actual-content">
+          <div class="info-box">
+            <div class="background-image"></div>
+            <div class="profile-picture">
+              <img
+                src="images\cartoon_me-removebg-preview_adobespark.png"
+                alt="cartoon me"
+              />
+            </div>
+            <div class="picture-shadow"></div>
+            <div class="my-name-title">Nikhil <span>Mistry</span></div>
+            <div class="description-title">
+              <span class="typed-text"></span>
+              <span class="cursor">&nbsp;</span>
+            </div>
+            <div class="social-links">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/nikhil-mistry-3a57a417a/"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/nikhil_008/"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:nikhilmistry3005@gmail.com"
+                    ><i class="fa fa-envelope-o"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-container about" id="sec1">
+            <div class="content-holder">
+              <h2>About <span>Me</span></h2>
+              <p class="about-description">
+                I am a chemical engineering graduate with a keen interest in the
+                <span>energy</span>, <span>environmental</span>,
+                <span>banking</span> and <span>consulting</span> sectors. I am
+                an ambitious and very hardworking individual with a desire to
+                always achieve to the best of my ability. Through my experiences
+                in my studies and high-level sports, I have developed excellent
+                leadership skills and can work as part of a team with ease. I
+                thrive in intense, high pressure situations, and have a keen
+                problem-solving ability.<br /><br />
+                Prior to advancing my academic career, I played golf at the
+                highest amateur level in South Africa. I competed in multiple
+                national level tournaments in diverse fields comprised of the
+                best golfers in the country. My dedication to playing high-level
+                sport has allowed me to develop the ability to perform
+                exceptionally under pressure and taught me the value of
+                discipline and work-ethic, which aided my academic and personal
+                performance.
+                <br />
+                <br />
+              </p>
+              <div class="personal-data-block">
+                <ul class="personal-data personal1">
+                  <li><span>Age</span> . . . . . 22</li>
+                  <li><span>Work Status</span> . . . . . Available</li>
+                </ul>
+
+                <ul class="personal-data personal2">
+                  <li><span>Country</span> . . . . . South Africa</li>
+                  <li><span>City</span> . . . . . Johanneburg</li>
+                </ul>
+              </div>
+
+              <div class="fun-facts">
+                <h3>Interesting <span>Facts</span></h3>
+                <ul class="facts-list">
+                  <li class="factitem">
+                    <i class="fa fa-trophy fa-2x"></i>
+                    <span>Scratch Golf Handicap Index</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-gamepad fa-2x"></i>
+                    <span>Professional Fortnite Player</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-desktop fa-2x"></i>
+                    <span>Front-end Web Developer</span>
+                  </li>
+                  <li class="factitem">
+                    <i class="fa fa-star fa-2x"></i>
+                    <span>Golden Key Member</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-coffee fa-2x"></i>
+                    <span>Coffee Addict</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="references">
+                <h3>References <span>List</span></h3>
+                <ul class="reference-list">
+                  <li>
+                    <span class="reference-name">Dr Thanos Kotsiopoulos</span>
+                    <span class="reference-relationship"
+                      >Thesis Supervisor</span
+                    >
+                    <span class="reference-institution"
+                      >University of Cape Town</span
+                    >
+                    <span class="reference-email"
+                      >thanos.kotsiopoulous@uct.ac.za</span
+                    >
+                  </li>
+
+                  <li>
+                    <span class="reference-name">Dr Pieter Levecque</span>
+                    <span class="reference-relationship"
+                      >University Lecturer</span
+                    >
+                    <span class="reference-institution"
+                      >University of Cape Town</span
+                    >
+                    <span class="reference-email"
+                      >pieter.levecque@uct.ac.za</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content-container resume" id="sec2">
+            <div class="content-holder">
+              <h2>Resume</h2>
+              <div class="education-section">
+                <h3>Education</h3>
+                <div class="school-list">
+                  <ul>
+                    <!-- <li>
+                      <a class="display-hidden" id="edu1" target="1">
+                        <span class="edu-title">Web Design Course</span>
+                        <span class="edu-year">2021-2021</span>
+                        <span class="edu-institute">Linkedin Learning</span>
+                        <span class="edu-location"
+                          ><i class="fa fa-map-marker"></i> Johanneburg, South
+                          Africa</span
+                        >
+                      </a>
+                    </li> -->
+
+                    <li>
+                      <a class="display-hidden" id="edu2" target="2">
+                        <span class="edu-title">BSc Chemical Engineering</span>
+                        <span class="edu-year">2017-2020</span>
+                        <span class="edu-institute"
+                          >University of Cape Town</span
+                        >
+                        <span class="edu-location"
+                          ><i class="fa fa-map-marker"></i> Cape Town, South
+                          Africa</span
+                        >
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="display-hidden" id="edu3" target="3">
+                        <span class="edu-title">High School Diploma</span>
+                        <span class="edu-year">2012-2016</span>
+                        <span class="edu-institute"
+                          >Crawford College Lonehill</span
+                        >
+                        <span class="edu-location"
+                          ><i class="fa fa-map-marker"></i> Johanneburg, South
+                          Africa</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experience-section">
+                <h3>Experience</h3>
+                <div class="work-list">
+                  <ul>
+                    <li>
+                      <a class="display-hidden" id="exp1" target="4">
+                        <span class="exp-title"
+                          >Junior Process Engineer
+                          <i>
+                            Jan 2020 - Feb 2020 <br />
+                            (2mo)</i
+                          ></span
+                        >
+                        <span class="exp-place"
+                          >G4 Engineering and Project Services</span
+                        >
+                        <span class="exp-location"
+                          ><i class="fa fa-map-marker"></i> Johanneburg, South
+                          Africa</span
+                        >
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="display-hidden" id="exp2" target="5">
+                        <span class="exp-title"
+                          >Undergraduate Mentor<i>
+                            Jan 2018 - Dec 2019 <br />(2yr)</i
+                          ></span
+                        >
+                        <span class="exp-place"
+                          >University of Cape Town Chemical Engineering
+                          Department</span
+                        >
+                        <span class="exp-location"
+                          ><i class="fa fa-map-marker"></i> Cape Town, South
+                          Africa</span
+                        >
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="display-hidden" id="exp3" target="6">
+                        <span class="exp-title"
+                          >Vacation Work Engineer<i>
+                            Jul 2018 - Jul 2018 <br />
+                            (1mo)</i
+                          ></span
+                        >
+                        <span class="exp-place">Unilever</span>
+                        <span class="exp-location"
+                          ><i class="fa fa-map-marker"></i> Johanneburg, South
+                          Africa</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="Leadership-section">
+                <h3>Leadership <span>Positions</span></h3>
+                <ul>
+                  <li>
+                    <div class="Smuts-O-Week">
+                      Smuts Hall O-Week Committe <br /><span
+                        >Organised orientation week activities for incoming
+                        first year students at Smuts Hall Residence</span
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="Smuts-Mentor">
+                      Smuts Hall Mentor <br /><span
+                        >Acted as a mentor to first year students helping them
+                        adjust to university life</span
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="Golf-Captain">
+                      First Team Golf Captain <br /><span
+                        >Led Crawford College Lonehill's golf team at multiple
+                        team events. Held the position from grades 9-12</span
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="Design-Lead">
+                      Chemical Engineering Design team leader <br />
+                      <span
+                        >Led a team of six engineers in designing an offshore
+                        natural gas processing plant</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content-container skills" id="sec3">
+            <div class="content-holder">
+              <h2>Skills</h2>
+              <div class="technical-skills">
+                <h3>
+                  <i class="fa fa-cogs"></i> Technical <span>Skills</span>
+                </h3>
+                <div class="tech-bar-group">
+                  <div class="tech-bar tech-bar-1">
+                    <div class="tech-bar-title" style="color: rgb(255, 0, 140)">
+                      Data Analysis
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="80%"
+                        style="background-color: rgb(255, 0, 140)"
+                      ></div>
+                      <div class="tech-bar-percent">80%</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-bar tech-bar-2">
+                    <div class="tech-bar-title" style="color: rgb(216, 0, 119)">
+                      Process Modelling
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="90%"
+                        style="background-color: rgb(216, 0, 119)"
+                      ></div>
+                      <div class="tech-bar-percent">90%</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-bar tech-bar-3">
+                    <div class="tech-bar-title" style="color: rgb(182, 0, 100)">
+                      Mathematical modelling
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="90%"
+                        style="background-color: rgb(182, 0, 100)"
+                      ></div>
+                      <div class="tech-bar-percent">90%</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-bar tech-bar-4">
+                    <div class="tech-bar-title" style="color: rgb(150, 0, 82)">
+                      Regression Analysis
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="80%"
+                        style="background-color: rgb(150, 0, 82)"
+                      ></div>
+                      <div class="tech-bar-percent">80%</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-bar tech-bar-5">
+                    <div class="tech-bar-title" style="color: rgb(122, 0, 67)">
+                      Financial Modelling and Forecasting
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="75%"
+                        style="background-color: rgb(122, 0, 67)"
+                      ></div>
+                      <div class="tech-bar-percent">75%</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-bar tech-bar-6">
+                    <div class="tech-bar-title" style="color: rgb(97, 0, 53)">
+                      Web Design
+                    </div>
+                    <div class="bar-info">
+                      <div
+                        class="tech-bar-inner"
+                        data-width="60%"
+                        style="background-color: rgb(97, 0, 53)"
+                      ></div>
+                      <div class="tech-bar-percent">60%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills-wrapper">
+                <div class="skill-type">
+                  <div class="coding-skills">
+                    <h3><i class="fa fa-code"></i> Coding Skills</h3>
+                    <div class="code-skills-panel">
+                      <div class="code-chart">
+                        <div class="code-percentage" data-percent="85%">
+                          <span>85%</span>
+                        </div>
+                        <span class="code-label">Python</span>
+                      </div>
+
+                      <div class="code-chart">
+                        <div class="code-percentage" data-percent="90%">
+                          <span>90%</span>
+                        </div>
+                        <span class="code-label">Scilab</span>
+                      </div>
+
+                      <div class="code-chart">
+                        <div class="code-percentage" data-percent="75%">
+                          <span>75%</span>
+                        </div>
+                        <span class="code-label">HTML/CSS</span>
+                      </div>
+
+                      <div class="code-chart">
+                        <div class="code-percentage" data-percent="65%">
+                          <span>65%</span>
+                        </div>
+                        <span class="code-label">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-type right-skill">
+                  <div class="project-skills">
+                    <h3><i class="fa fa-users"></i> Project Skills</h3>
+                    <ul>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Teamwork</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Leadership</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Project management</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Time management</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Verbal communication</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Written communication</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Report writing</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-check"></i>
+                        <span>Presentation production</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="skill-type">
+                  <div class="office-skills">
+                    <h3><i class="fa fa-windows"></i> Microsoft Office</h3>
+                    <div class="office-container">
+                      <div class="office-app office-word">
+                        <p>Word</p>
+                        <span class="office-rating"
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle-thin"></i
+                        ></span>
+                      </div>
+
+                      <div class="office-app office-excel">
+                        <p>Excel</p>
+                        <span class="office-rating"
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle-thin"></i
+                        ></span>
+                      </div>
+
+                      <div class="office-app office-powerpoint">
+                        <p>Powerpoint</p>
+                        <span class="office-rating"
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle-thin"></i
+                        ></span>
+                      </div>
+
+                      <div class="office-app office-visio">
+                        <p>Visio</p>
+                        <span class="office-rating"
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle"></i
+                          ><i class="fa fa-circle-thin"></i
+                          ><i class="fa fa-circle-thin"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-type right-skill">
+                  <div class="modelling-skills">
+                    <h3>
+                      <i class="fa fa-sitemap"></i> Modelling Environments
+                    </h3>
+                    <ul>
+                      <li style="background-color: rgb(255, 113, 191, 0.45)">
+                        <span>AutoCad</span>
+                      </li>
+                      <li style="background-color: rgb(255, 92, 181, 0.45)">
+                        <span>AutoDesk Inventor</span>
+                      </li>
+                      <li style="background-color: rgb(255, 82, 171, 0.45)">
+                        <span>Cape-Open Flowsheet Simulator</span>
+                      </li>
+                      <li style="background-color: rgb(255, 72, 161, 0.45)">
+                        <span>Aspen Flowsheet Simulator</span>
+                      </li>
+                      <li style="background-color: rgb(255, 62, 151, 0.45)">
+                        <span>Procreate</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="skill-type">
+                  <div class="personality-traits">
+                    <h3><i class="fa fa-list"></i> Personality Traits</h3>
+                    <ul>
+                      <li>
+                        <i class="fa fa-long-arrow-right"></i>
+                        <span>Dedicated</span>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-long-arrow-right"></i>
+                        <span>Creative</span>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-long-arrow-right"></i>
+                        <span>Ambitious</span>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-long-arrow-right"></i>
+                        <span>Analytical</span>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-long-arrow-right"></i>
+                        <span>Competitive</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-container golf" id="sec4">
+            <div class="content-holder">
+              <h2>Golf</h2>
+              <div class="golf-data-overview">
+                <ul>
+                  <li>
+                    <span>&nbsp;Current Handicap Index</span> . . . . . 0.9
+                  </li>
+
+                  <li>
+                    <span>&nbsp;Home Club</span> . . . . . Randpark Golf Club
+                  </li>
+                </ul>
+              </div>
+              <div class="golf-description">
+                <p>
+                  I have played golf every since I was three years and played
+                  the sport competively for more than 15 years. I have competed
+                  at the highest amateur level in South Africa, competing
+                  against some of the best golfers in the country. As I grew up
+                  in the competitive golf world many of my personality traits
+                  are a direct result of me consistently competing at a high
+                  level.
+                  <br /><br />
+                  Playing highly competitive golf taught me the value of
+                  hard-work and discipline in order to achieve a goal. In
+                  addition to this, it forced me to become aware of my emotions
+                  and how to control them in a mulititude of situations. This
+                  allowed me to cultivate a strongly ability to thrive in high
+                  pressure situations. <br /><br />
+                  Playing high level golf for so many year has allowed to play
+                  with a wide range of people spanning various industries and
+                  levels. This has developed my abilty to communicate
+                  effectively with a people from various backgrounds. <br />
+                  <br />
+                </p>
+              </div>
+              <div class="golf-achievements">
+                <h3>Key Achievements</h3>
+                <ul>
+                  <li>
+                    <i class="fa fa-trophy fa-2x"></i>
+                    <span>2 Glacier Junior Series Wins</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-users fa-2x"></i>
+                    <span>South African Boys Nationals (u15, u17, u19)</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-star fa-2x"></i>
+                    <span>Randpark 1<sup>st</sup> Team Scratch League</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-user fa-2x"></i>
+                    <span>Crawford Lonehill 1<sup>st</sup> Team Captain</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="golf-facts">
+                <h3>Additional Information</h3>
+                <ul>
+                  <li><span>Lowest Score</span> <i>68 (-4)</i></li>
+                  <li>
+                    <span>Hole in One</span>
+                    <i>Woodhill, 2<sup>nd</sup> Hole</i>
+                  </li>
+                  <li><span>Years Played</span> <i>19</i></li>
+                  <li>
+                    <span>Favourite Course</span> <i>Simola Country Club</i>
+                  </li>
+                </ul>
+              </div>
+              <h2>Other Sport Achievements</h2>
+              <div class="other-sport-achievements">
+                <ul class="other-sport-achievements-list">
+                  <li class="other-sport Tennis">
+                    <span>Tennis</span>
+                    <ul class="other-sport-list">
+                      <li>
+                        <i class="fa fa-square"></i> Crawford Lonehill 1<sup
+                          >st</sup
+                        >
+                        Team
+                      </li>
+                      <li>
+                        <i class="fa fa-square"></i> Crawford Lonehill Half
+                        Colors
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="other-sport Karate">
+                    <span>Karate</span>
+                    <ul class="other-sport-list">
+                      <li><i class="fa fa-square"></i> Brown Belt</li>
+                      <li>
+                        <i class="fa fa-square"></i> SA Karate Nationals (Bronze
+                        Medal)
+                      </li>
+                      <li>
+                        <i class="fa fa-square"></i> Crawford Lonehill Full
+                        Colors
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="other-sport Netball">
+                    <span>Netball</span>
+                    <ul class="other-sport-list">
+                      <li>
+                        <i class="fa fa-square"></i> Position: Goal Shooter
+                      </li>
+                      <li>
+                        <i class="fa fa-square"></i> Smuts Hall 1<sup>st</sup>
+                        Team
+                      </li>
+                      <li>
+                        <i class="fa fa-square"></i> UCT Inter Res Champions
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content-container works" id="sec5">
+            <div class="content-holder">
+              <h2>Works</h2>
+              <div class="works-nav-bar">
+                <ul>
+                  <li class="show-art">
+                    <a class="show-works" worksnum="1">Art</a>
+                  </li>
+                  <li><a class="show-works" worksnum="2">Reports</a></li>
+                </ul>
+              </div>
+
+              <div class="works-main-container">
+                <div class="works-container art-works" id="workcon1">
+                  <div class="art-pieces">
+                    <ul class="art-left">
+                      <li>
+                        <a class="display-art" target="1">
+                          <img src="images\Art\me and her.jpg" alt="" />
+                          <span>Digital Art</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="2">
+                          <img src="images\Art\bp.jpg" alt="" />
+                          <span>Digital Art</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="3">
+                          <img src="images\Art\windows.jpg" alt="" />
+                          <span>Arylic on canvas</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="4">
+                          <img src="images\Art\fireside.jpg" alt="" />
+                          <span>Arylic on canvas</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="art-right">
+                      <li>
+                        <a class="display-art" target="5">
+                          <img src="images\Art\boats and moats.jpg" alt="" />
+                          <span>Digital Art</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="6">
+                          <img src="images\Art\meet steve.jpg" alt="" />
+                          <span>Digital Art</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="7">
+                          <img src="images\Art\seacliff.jpg" alt="" />
+                          <span>Arylic on canvas</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="display-art" target="8">
+                          <img src="images\Art\pinktree.jpg" alt="" />
+                          <span>Arylic on canvas</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="works-container report-works" id="workcon2">
+                  <ul>
+                    <li>
+                      <a class="display-report" target="1">
+                        <img
+                          src="images\Report pages\Thesis title.jpg"
+                          alt=""
+                        />
+                        <span>Final Year Chemical Engineering Thesis</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="display-report" target="2">
+                        <img
+                          src="images\Report pages\Design title.jpg"
+                          alt=""
+                        />
+                        <span>Final Year Chemical Engineering Design</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-container contact" id="sec6">
+            <div class="content-holder">
+              <h2>Send me a message</h2>
+              <div class="contact-wrapper">
+                <form action="#">
+                  <div class="contact-field highlight-area" id="contfield1">
+                    <span><i class="fa fa-user"></i></span>
+
+                    <input
+                      class="highlight-zone"
+                      type="text"
+                      name="name"
+                      placeholder="Enter your first name"
+                      target="1"
+                    />
+                  </div>
+
+                  <div class="contact-field highlight-area" id="contfield2">
+                    <span><i class="fa fa-user"></i></span>
+                    <input
+                      class="highlight-zone"
+                      type="text"
+                      name="surname"
+                      placeholder="Enter your surname"
+                      target="2"
+                    />
+                  </div>
+
+                  <div class="contact-field highlight-area" id="contfield3">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input
+                      class="highlight-zone"
+                      type="text"
+                      name="email"
+                      placeholder="Enter your email"
+                      target="3"
+                    />
+                  </div>
+
+                  <div class="contact-message highlight-area" id="contfield4">
+                    <span><i class="fa fa-comment"></i></span>
+                    <textarea
+                      class="highlight-zone"
+                      name="message"
+                      placeholder="Write your message"
+                      target="4"
+                    ></textarea>
+                  </div>
+
+                  <div class="contact-button">
+                    <button type="submit">Send Message</button>
+                    <span></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-info-container">
+      <div class="extra-content" id="extra2">
+        <div class="ng-background" target="2"></div>
+        <div class="added-information UCT-Chem">
+          <i class="fa fa-times fa-2x" target="2"></i>
+          <img src="images\UCT_Upper_Campus_landscape_view.jpg" alt="" />
+          <div class="added-information-content">
+            <h1>BSc Chemical Engineering</h1>
+            <div class="fine-details">
+              <p>2017 - 2020</p>
+              <p><i class="fa fa-university"></i> University of Cape Town</p>
+              <p><i class="fa fa-map-marker"></i> Cape Town, South Africa</p>
+            </div>
+
+            <div class="full-details">
+              <p>
+                After finsihing my high-school career I pursued a
+                <span
+                  >Bachelor of Science in Engineering in Chemical
+                  Engineering</span
+                >
+                at the University of Cape Town which I graduated from with
+                distinction. The content of the degree focussed on process
+                design and optimisation based on fundamental thermodynamic and
+                physics theory. My academic performane in the degree earned me
+                recognition in the form of being on the Dean's Merit List,
+                invited to the Golden Key International Honour Society and
+                receiving the Smuts Hall Wardens Award for Academic Excellence.
+                <br /><br />
+                During my degree I specialised in chemical catalysis, which
+                focusses on the optimisation of reaction process. Exposure to
+                this field allowed to refine my mathematically modelling skills.
+                My final year thesis investigated the feasibilty of combinin
+                chemical and biologoical reaction systems into a single tandem
+                system. This project allowed me to use my skills in modelling
+                and coding to create regression algoritms to complete the
+                investigation. <br /><br />
+                Outside of academics, I was a very active member of my
+                residence, Smuts Hall. I was a part of the committees which
+                organised orientation week activities for incoming first year
+                students and keynote evening where we organised for external
+                people of prominance to give a talk to members of the house. In
+                addition to this, I was a mentor to first year students both
+                within Smuts Halls and the UCT Chemical Engineering deparment
+                helping them adjust to university life. I was also a member of
+                the UCT Golf Club and Engineers without borders.
+              </p>
+              <h3>Awards and Achievements</h3>
+              <ul>
+                <li><i class="fa fa-caret-right"></i> Dean's Merit List</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Golden Key International
+                  Honour Society Member
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Smuts Hall Wardens Award for
+                  Academic Excellence
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Best final year thesis
+                  project
+                </li>
+              </ul>
+              <h3>Societies and Leadeship Positions</h3>
+              <ul>
+                <li>
+                  <i class="fa fa-caret-right"></i> Smuts Hall Orientation Week
+                  Committe
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Smuts Hall Keynote Committe
+                </li>
+                <li><i class="fa fa-caret-right"></i> Smuts Hall Mentor</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Chemical Engineering Mentor
+                </li>
+                <li><i class="fa fa-caret-right"></i> UCT Golf Club</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Engineers Without Borders
+                </li>
+              </ul>
+              <h3>Key Skills Developed</h3>
+              <ul>
+                <li>
+                  <i class="fa fa-caret-right"></i> Process Design and
+                  Optimisation
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Project and Time Management
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Advanced Process Modelling
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Scilab, MATLAB, Python
+                </li>
+                <li><i class="fa fa-caret-right"></i> Data Analysis</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Microsoft Word, Excel and
+                  Powerpoint
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra3">
+        <div class="ng-background" target="3"></div>
+        <div class="added-information Crawford-High">
+          <i class="fa fa-times fa-2x" target="3"></i>
+          <img src="images\crawford_lonehill_large1.jpg" alt="" />
+          <div class="added-information-content">
+            <h1>High School Diploma</h1>
+            <div class="fine-details">
+              <p>2012 - 2016</p>
+              <p><i class="fa fa-university"></i> Crawford College Lonehill</p>
+              <p><i class="fa fa-map-marker"></i> Johanneburg, South Africa</p>
+            </div>
+            <div class="full-details">
+              <p>
+                I completed my high school education at Crawford College
+                Lonehill, in Johanneburg. I graduated as one of the top ten
+                academic achievers in my class with five international
+                examination board (IEB) distinctions in mathematics (for which I
+                received the gold medal), physical science, advanced program
+                mathematics, accounting and life orientation. I was recognised
+                for my academic achievements by being awarded full colours.
+                <br /><br />
+                During my high school career, I was a highly competitive golfer
+                and competed in mutilple national tournaments across the
+                country. I represented the Crawford College Lonehill Golf 1<sup
+                  >st</sup
+                >
+                Team f or all 5 years of my high-school career and captained the
+                team for my final 4 years. In addition to this, I was also a
+                part of the Tennis 1<sup>st</sup> Team.
+              </p>
+              <h3>Academic Awards and Achievements</h3>
+              <ul>
+                <li><i class="fa fa-caret-right"></i> 5 IEB distinctions</li>
+                <li><i class="fa fa-caret-right"></i> Academic full colours</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Top ten academic achiever
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Mathematics Gold Medal
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> Senior Mathematics Olympiad
+                </li>
+              </ul>
+              <h3>Societies and Leadeship Positions</h3>
+              <ul>
+                <li><i class="fa fa-caret-right"></i> Golf full colours</li>
+                <li><i class="fa fa-caret-right"></i> Karate full colours</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> 1<sup>st</sup> Team Golf
+                  Captain
+                </li>
+                <li>
+                  <i class="fa fa-caret-right"></i> 1<sup>st</sup> Team Tennis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-content G4-EPS" id="extra4">
+        <div class="ng-background" target="4"></div>
+        <div class="added-information">
+          <i class="fa fa-times fa-2x" target="4"></i>
+          <img src="images\g4 eps.jpg" alt="" />
+          <div class="added-information-content">
+            <h1>Junior Process Engineer</h1>
+            <div class="fine-details">
+              <p>Jan 2020 - Feb 2020 (2mo)</p>
+              <p>
+                <i class="fa fa-university"></i> G4 Engineering and Project
+                Services (Pty)
+              </p>
+              <p><i class="fa fa-map-marker"></i> Johanneburg, South Africa</p>
+            </div>
+
+            <div class="full-details">
+              <p>
+                I servered as a Junior Process Engineer at G4 Engineering and
+                Project Services (G4 EPS) during a summer vacation of my
+                chemical engineering degree. G4 EPS are a specialised mining
+                consulting firm based in Johanneburg and the scope of my role as
+                a Junior Process Engineer was to completed various feasibilty
+                calculations. This included sizing and costing various pieces of
+                mining equipment, completing mass and energy balances across
+                multiple processes and creating process models. <br /><br />
+                I completed these engineering calculations and modelling for
+                three different sections of a platinum recovery process. As
+                required of the role, I learnt how to build 3D models of
+                equipment in AutoDesk Inventor and was able to produce 3D models
+                of the pieces of equipment which I designed.
+              </p>
+              <h3>Key Skills Developed</h3>
+              <ul>
+                <li>
+                  <i class="fa fa-caret-right"></i> Mining Equipment Design
+                </li>
+                <li><i class="fa fa-caret-right"></i> Project Management</li>
+                <li>
+                  <i class="fa fa-caret-right"></i> AutoDesk Inventor modeling
+                </li>
+                <li><i class="fa fa-caret-right"></i> Process Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-content UCT-Mentor" id="extra5">
+        <div class="ng-background" target="5"></div>
+        <div class="added-information">
+          <i class="fa fa-times fa-2x" target="5"></i>
+          <img src="images\uct chem eng.jpg" alt="" />
+          <div class="added-information-content">
+            <h1>Undergraduate Mentor</h1>
+            <div class="fine-details">
+              <p>Jan 2018 - Dec 2019 (2yr)</p>
+              <p>
+                <i class="fa fa-university"></i> Chemical Engineering Deparment
+                at the University of Cape Town
+              </p>
+              <p><i class="fa fa-map-marker"></i> Cape Town, South Africa</p>
+            </div>
+
+            <div class="full-details">
+              <p>
+                During the second and third years of my chemical engineering
+                degree I was a mentor to incoming first year chemical
+                engineering students at the University of Cape Town. My role in
+                this position was to assist first year students with adapting to
+                life in the university environment. Over the two years I spent
+                in this position, I was a mentor to seven students and provided
+                them with tools and techniques which would help them handle the
+                pressure and demands of a chemical engineering degree.
+                <br /><br />
+                A large portion of the job involved interacting with head of the
+                undergraduate chemical engineering program to ensure a smooth
+                transition for incoming students. Other aspects of the role
+                includes providing emotional support and organising orientation
+                events for students.
+              </p>
+              <h3>Key Skills Developed</h3>
+              <ul>
+                <li><i class="fa fa-caret-right"></i> Empathy</li>
+                <li><i class="fa fa-caret-right"></i> Time Management</li>
+                <li><i class="fa fa-caret-right"></i> People Management</li>
+                <li><i class="fa fa-caret-right"></i> Communication</li>
+                <li><i class="fa fa-caret-right"></i> Leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-content Unilever-work" id="extra6">
+        <div class="ng-background" target="6"></div>
+        <div class="added-information">
+          <i class="fa fa-times fa-2x" target="6"></i>
+          <img src="images\unilever.jpg" alt="" />
+          <div class="added-information-content">
+            <h1>Vacation Work Engineer</h1>
+            <div class="fine-details">
+              <p>Jul 2018 - Jul 2019 (1mo)</p>
+              <p><i class="fa fa-university"></i> Unilever</p>
+              <p><i class="fa fa-map-marker"></i> Johanneburg, South Africa</p>
+            </div>
+
+            <div class="full-details">
+              <p>
+                During a the winter vacation in the 2<sup>nd</sup> year of my
+                chemical engineering degree, I worked as a vacation work
+                engineering at the Unilever margarine and washing powder plants
+                in Johanneburg. The first portion of the vacation work was to
+                job shadow process engineers and gain an understanding of the
+                processes on both plants and how a process engineer operates.
+                <br /><br />
+                A large portion of my time at Unilever was spent in the research
+                and developement department for the margarine processing plant.
+                As part of the job, in team consisting of other vacation work
+                engineers, I completed a research investigation to improve the
+                efficiency of the process. This was completed by gaining an
+                understanding of the process, developing a process modelling and
+                determining which areas can be optimised. As a team, we were
+                able to provide constructive feedback on optimisation
+                possibilities to the plant director.
+              </p>
+              <h3>Key Skills Developed</h3>
+              <ul>
+                <li><i class="fa fa-caret-right"></i> Teamwork</li>
+                <li><i class="fa fa-caret-right"></i> Time Management</li>
+                <li><i class="fa fa-caret-right"></i> Process modelling</li>
+                <li><i class="fa fa-caret-right"></i> Process Optimisation</li>
+                <li><i class="fa fa-caret-right"></i> Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art1">
+        <div class="ng-background-works" target="1"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="1"></i>
+          <img src="images\Art\me and her.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art2">
+        <div class="ng-background-works" target="2"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="2"></i>
+          <img src="images\Art\bp.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art3">
+        <div class="ng-background-works" target="3"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="3"></i>
+          <img src="images\Art\windows.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art4">
+        <div class="ng-background-works" target="4"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="4"></i>
+          <img src="images\Art\fireside.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art5">
+        <div class="ng-background-works" target="5"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="5"></i>
+          <img src="images\Art\boats and moats.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art6">
+        <div class="ng-background-works" target="6"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="6"></i>
+          <img src="images\Art\meet steve.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art7">
+        <div class="ng-background-works" target="7"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="7"></i>
+          <img src="images\Art\seacliff.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-art8">
+        <div class="ng-background-works" target="8"></div>
+        <div class="added-image">
+          <i class="fa fa-times fa-2x" target="8"></i>
+          <img src="images\Art\pinktree.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-report1">
+        <div class="ng-background-report" target="1"></div>
+        <div class="added-report">
+          <i class="fa fa-times fa-2x" target="1"></i>
+          <iframe
+            src="reports\GROUP BI - Final report.pdf"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            role="document"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="extra-content" id="extra-report2">
+        <div class="ng-background-report" target="2"></div>
+        <div class="added-report">
+          <i class="fa fa-times fa-2x" target="2"></i>
+          <iframe
+            src="reports\Area 5 .pdf"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            role="document"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
